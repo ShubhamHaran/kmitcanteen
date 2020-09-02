@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
+<style>
+html{
+    scroll-behavior: smooth;
+  }
+
+  #navbar {
+    background-color: #84a9ac;
+
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: snow;
+  font-family: 'Open Sans', sans-serif;
+  position:fixed;
+  top:0%;
+  width:100%;
+
+  /border-bottom: 2px solid gray;/
+}
+li a:hover{
+  background-color: grey;
+  border-bottom: 5px solid lightgreen;
+}
+ul li a:hover,
+ul li a:focus {
+  color: brown;
+  background-color: rgba(255,255,255,.6);
+
+  /transition/
+  -webkit-transition: width .3s,right .3s,background-color .3s;
+  -moz-transition: width .3s,right .3s,background-color .3s;
+  -o-transition: width .3s,right .3s,background-color .3s;
+  transition: width .3s,right .3s,background-color .3s;
+}
+
+ul li a:focus { border-bottom: 3px solid #c351fa; }
+
+li {
+  float: left;
+}
+li a{
+  border-bottom: 2px solid whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+li a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 24px 40px;
+  text-decoration: blink;
+  font-family: 'Open Sans', sans-serif;
+}
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+.active{
+  border-bottom: 5px solid green;
+}
+    .text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-indent: center;
+    }
+    .price{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-indent: center;
+    }
+    .image{
+      height: 150px;
+      width:150px;
+      border-radius: 12px;
+    }
+    .btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+      input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  /*padding-top: 10%;*/
+  height:100%
+  padding:100%;
+}
+</style>
+    }
+  </style>
+  <title>KMIT canteen</title>
+</head>
+
+<body style="background-color: #f4f6ff">
+
+  <ul id="navbar">
+    <li><img src="chef.jpeg" alt="" style="border-radius:100%; height:70px;"></li>
+    <li class="nv"><a href="index.html">Home</a></li>
+    <li class="nv"><a href="menu.html">Menu</a></li>
+    <li class="nv"><a href="order.html">Order</a></li>
+    <!--<li class="nv"><a href="C:\Users\Dell\Desktop\KMIT WT PROJECT\canteen\about.html">Contact us</a></li>-->
+    <li class="active"><a href="helpdeskform.html">Help desk</a></li>
+    
+  </ul>
+<div style="padding-top: 5%">
+  <form action="/action_page.php" style="margin-left: 40%;margin-right: auto; width:50%"">
+    <label for="fname">Full Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter Full Name">
+<br>
+    <label for="lname">Phone Number</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter Mobile Number">
+<br>
+    <label for="query">Query</label>
+    <select id="query" name="query">
+      <option value="query" selected="true" disabled>Select--</option>
+      <option value="complaint">Complaint/Suggestion</option>
+      <option value="review">Review</option>
+      <option value="others">Others</option>
+    </select>
+    <br><br>
+    <textarea placeholder="Write Query Here..." style="height: 150px;width:70%"></textarea>
+  <br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

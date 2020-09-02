@@ -1,0 +1,56 @@
+p{
+  font-family: 'Crimson Text', serif;
+  font-size: 25px;
+  text-align: left;
+  color: #204051;
+}
+h2
+{
+  text-align: center;
+  color: #003349;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+
+
+}
+.mainimg
+{
+  width: 100%;
+  margin-left: 500px;
+}
+.middle-container{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+
+}
+.top-container{
+  height: 200px;
+  width: 100%;
+
+  padding-top: 150px;
+  text-align: center;
+  background-image: url("canteen .jpeg");
+  /*-https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60*/
+  background-repeat: round;
+
+  /*filter: blur(2px);*/
+
+}
+td{
+  text-align: center;
+}
+
+.reviews{
+  margin-left: 325px;
+  
+}
+
+hr{
+  border: dotted #aacdbe;
+  border-width: 5px;
+  border-bottom: none;
+  width: 5%
+}

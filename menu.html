@@ -1,0 +1,211 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Menu</title>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+  #navbar {
+    background-color: #84a9ac;
+
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: snow;
+  font-family: 'Open Sans', sans-serif;
+  position:fixed;
+  top:0%;
+  width:100%;
+
+  /border-bottom: 2px solid gray;/
+}
+li a:hover{
+  background-color: grey;
+  border-bottom: 5px solid lightgreen;
+
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+.text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-indent: center;
+}
+.textsub{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-indent: center;
+}
+.maps{
+margin-right: auto;
+margin-left: auto;
+}
+
+ul li a:hover,
+ul li a:focus {
+  color: brown;
+  background-color: rgba(255,255,255,.6);
+
+  /transition/
+  -webkit-transition: width .3s,right .3s,background-color .3s;
+  -moz-transition: width .3s,right .3s,background-color .3s;
+  -o-transition: width .3s,right .3s,background-color .3s;
+  transition: width .3s,right .3s,background-color .3s;
+}
+
+ul li a:focus { border-bottom: 3px solid #c351fa; }
+
+li {
+  float: left;
+}
+li a{
+  border-bottom: 2px solid whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+li a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 24px 40px;
+  text-decoration: blink;
+  font-family: 'Open Sans', sans-serif;
+}
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+.active{
+  border-bottom: 5px solid green;
+}
+#mySidenav a {
+  position: fixed; /* Position them relative to the browser window */
+  left: -80px;
+  top: 60%; /* Position them outside of the screen */
+  transition: 0.3s;/* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0;
+  background-color:green;/* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+</style>
+</head>
+<body style="background-color: #f4f6ff">
+
+<ul id="navbar">
+  <li><img src="chef.jpeg" alt="" style="border-radius:100%; height:70px;"></li>
+  <li class="nv"><a href="index.html">Home</a></li>
+  <li class="active"><a href="menu.html">Menu</a></li>
+  <li class="nv"><a href="order.html">Order</a></li>
+  <!--<li class="nv"><a href="about.html">Contact us</a></li>-->
+  <li class="nv"><a href="helpdeskform.html">Help desk</a></li>
+  
+</ul>
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="Pure veg">Pure Veg
+    <img src="purevg.png" style="width:16px;height:16px;"></a>
+
+</div>
+<div id="content" style="padding-top:10%">
+<div id="menu" class="text">
+  <style type="text/css">
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+tr:nth-child(odd) {
+  background-color: #ffdbc5;
+}
+</style>
+  <table>
+    <tr>
+      <th>#</th>
+      <th>Item</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Idly</td>
+      <td>₹20</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Wada</td>
+      <td>₹20</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Puri</td>
+      <td>₹20</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Chapathi</td>
+      <td>₹30</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Fried rice</td>
+      <td>₹40</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Paneer Tikka</td>
+      <td>₹70</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Spring roll</td>
+      <td>₹40</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Noodles</td>
+      <td>₹40</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Aloo 65</td>
+      <td>₹35</td>
+    </tr>
+  </table>
+
+</div>
+</div>
+
+
+
+</body>
+</html>

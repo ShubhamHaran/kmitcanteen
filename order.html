@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Order 
+  </title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style type="text/css">
+    html{
+    scroll-behavior: smooth;
+  }
+  #navbar {
+    background-color: #84a9ac;
+
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: snow;
+  font-family: 'Open Sans', sans-serif;
+  position:fixed;
+  top:0%;
+  width:100%;
+
+  /border-bottom: 2px solid gray;/
+}
+li a:hover{
+  background-color: grey;
+  border-bottom: 5px solid lightgreen;
+}
+ul li a:hover,
+ul li a:focus {
+  color: brown;
+  background-color: rgba(255,255,255,.6);
+
+  /transition/
+  -webkit-transition: width .3s,right .3s,background-color .3s;
+  -moz-transition: width .3s,right .3s,background-color .3s;
+  -o-transition: width .3s,right .3s,background-color .3s;
+  transition: width .3s,right .3s,background-color .3s;
+}
+
+ul li a:focus { border-bottom: 3px solid #c351fa; }
+
+li {
+  float: left;
+}
+li a{
+  border-bottom: 2px solid whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+}
+li a{
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 24px 40px;
+  text-decoration: blink;
+  font-family: 'Open Sans', sans-serif;
+}
+#map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+.active{
+  border-bottom: 5px solid green;
+}
+    .text{
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  text-indent: center;
+    }
+    .price{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  text-indent: center;
+    }
+    .image{
+      height: 150px;
+      width:150px;
+      border-radius: 12px;
+    }
+    .btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+}
+  </style>
+</head>
+<body style="background-color: #f4f6ff">
+<ul id="navbar">
+  <li><img src="chef.jpeg" alt="" style="border-radius:100%; height:70px;"></li>
+  <li class="nv"><a href="index.html">Home</a></li>
+  <li class="nv"><a href="menu.html">Menu</a></li>
+  <li class="active"><a href="order.html">Order</a></li>
+  <!--<li class="nv"><a href="about.html">Contact us</a></li>-->
+  <li class="nv"><a href="helpdeskform.html">Help desk</a></li>
+  
+</ul>
+  <table style="width: 80%;height: 100%">
+    <tr>
+      <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2013/01/idli-recipe-1-500x500.jpg" class="image"></div>
+      <div class="text">Idly</div>
+      <div class="price">₹20</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://www.archanaskitchen.com/images/archanaskitchen/Indian_Breakfast_Tiffins/South_Indian_Medu_Vada_Sambar_with_Medu_Vada_Maker-8.jpg"class="image"></div>
+      <div class="text">Wada</div>
+      <div class="price">₹20</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://ministryofcurry.com/wp-content/uploads/2020/03/puri-7.jpg" class="image"></div>
+      <div class="text">Puri</div>
+      <div class="price">₹20</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    </tr>
+    <tr >
+      <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://lh4.ggpht.com/-br4XlnfcwRk/VK5yMKDlSuI/AAAAAAAAj9s/6dR0qKpfgL4/Chapati_thumb%25255B2%25255D.jpg?imgmax=800" class="image"></div>
+      <div class="text">Chapathi</div>
+      <div class="price">₹30</div>
+      <div><button  class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://holycowvegan.net/wp-content/uploads/2020/03/vegetable-fried-rice-5.jpg" class="image"></div>
+      <div class="text">Fried Rice</div>
+      <div class="price">₹40</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka-500x500.jpg" class="image"></div>
+      <div class="text">Paneer Tikka</div>
+      <div class="price">₹70</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    </tr>
+    <tr>
+      <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://dinnerthendessert.com/wp-content/uploads/2018/08/Spring-Rolls.jpg" class="image"></div>
+      <div class="text">Spring roll</div>
+      <div class="price">₹40</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodlesH2.jpg" class="image"></div>
+      <div class="text">Noodles</div>
+      <div class="price">₹40</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
+      <div class="image"><img src="https://yummyrecipes.oneshot.in/wp-content/uploads/2016/06/Aloo-65-yummyrecipes.onehsot.in_-768x576.jpg" class="image"></div>
+      <div class="text">Aloo 65</div>
+      <div class="price">₹35</div>
+      <div><button class="btn">Add to Cart</button></div>
+    </td>
+    </tr>
+  </table>
+
+</body>
+</html>
