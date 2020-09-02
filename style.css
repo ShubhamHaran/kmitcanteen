@@ -29,6 +29,7 @@ h2
 .top-container{
   height: 300px;
   width: 100%;
+padding-top:10%;
 transition: .5s ease;
   position:relative;
   padding-top: 150px;
