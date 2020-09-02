@@ -2,14 +2,20 @@
 
 <head>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Raleway:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <style>
     html{
     scroll-behavior: smooth;
   }
+  .active{
+  border-bottom: 5px solid green;
+}
   #navbar {
     background-color: #84a9ac;
+    color: #AC3B61;
 
   }
 ul {
@@ -22,6 +28,7 @@ ul {
   position:fixed;
   top:0%;
   width:100%;
+  color:#AC3B61;
 
   /border-bottom: 2px solid gray;/
 }
@@ -40,6 +47,15 @@ ul li a:focus {
   -o-transition: width .3s,right .3s,background-color .3s;
   transition: width .3s,right .3s,background-color .3s;
 }
+#ffooter {
+  position: static;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: cadetblue;
+  color: white;
+  text-align: left;
+}
 
 ul li a:focus { border-bottom: 3px solid #c351fa; }
 
@@ -53,6 +69,7 @@ li a{
 li a{
   display: inline-block;
   color: black;
+   /*color: #AC3B61;*/
   text-align: center;
   padding: 24px 40px;
   text-decoration: blink;
@@ -62,9 +79,7 @@ li a{
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
        }
-.active{
-  border-bottom: 5px solid green;
-}
+
     .text{
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
@@ -116,8 +131,8 @@ li a{
     <div id="home" class="text">
       <!--<h1 style="color:burlywood">Home</h1>-->
         <div class="top-container">
-          <p id="bgtext" style="color:black; font-family: 'Exo 2', sans-serif; text-align: center;"><em></em></p>
-        </div>
+          <div class="overlay">
+          <div class="overlayt"><em>Welcome to Srinivas Canteen!</em></div></div></div></div>
 
       <div class="middle-container">
         <h2>Food connects people.</h2>
@@ -160,20 +175,20 @@ li a{
           <p><i>"Omkar Bhaiyya's vada pav and chaat are worth dying for."</i>- Nainika Reddy</p>
           <p><i>"Uncle is so patient and makes sure we don't wait in line for long."</i>- Gauri Singh</p>
         </div>
-
-      </div>
-
-
+        </div>
   </div>
-  </div>
-<footer style="width: 100%; height:60%;;background-color: powderblue">
-  <div style="width: 100%; height:40%;;background-color: powderblue">
-    <div style="padding-top: 3%;padding-left: 2%;border-radius: 12px">
-    <iframe id="maps" src="https://www.google.com/maps/d/embed?mid=1oVYPcJ1HVWUY9PD3OsLeJvzB2RQ&hl=en" width="30%" height="150%"></iframe></div>
-    <p style="text-align: left;padding-left:2%;font-size: 24px"><strong>Contact Number: 9866516587</strong></p>
-        <p style="text-align: left;padding-left:2%;font-size: 19px">©Students of Keshav Memorial Institute of Technology 2020</p>
-      </div>
-</footer>
+        <footer id="ffooter" style="background-color: ;width: 100%;padding-top: 0.7%">
+          <div id="foot" style="background-color: cadetblue;width: 100%;">
+            <p style="font-family:'Raleway', sans-serif;color: white;width: 100%;padding-left: 3%"><strong>Srinivas Canteen</strong></p>
+            <p style="font-family:'Raleway', sans-serif;width: 100%;padding-left: 3%">Keshav Memorial Institute of Technology, Narayanguda.</p>
+            <p style="font-family:'Raleway', sans-serif;width: 100%;padding-left: 3%">+91-9866516587</p>
+            <p style="font-family:'Raleway', sans-serif;width: 100%;padding-left: 3%">Copyright© 2020 All Rights Reserved by 18BD1A0519, 18BD1A050A, 18BD1A050M, 18BD1A0504</p>
+          </div>
+        </footer>
+
+
+  
+
 </body>
 
 </html>
