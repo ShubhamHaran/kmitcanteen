@@ -4,7 +4,10 @@
   <title>
     Order 
   </title>
+  <script src="func.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        
   <style type="text/css">
     html{
     scroll-behavior: smooth;
@@ -59,6 +62,22 @@ li a{
   text-decoration: blink;
   font-family: 'Open Sans', sans-serif;
 }
+.listhai{
+  width:30%;
+  position:fixed;
+  bottom: 30%;
+  right:5%;
+  padding-top: 60%;
+}
+.count{position:fixed;
+  bottom: 15%;
+  right:5%;
+font-size: 24px;}
+  .total-count{position:fixed;
+  bottom: 12%;
+  right:5%;
+  font-size: 24px;
+}
 #map {
         height: 400px;  /* The height is 400 pixels */
         width: 100%;  /* The width is the width of the web page */
@@ -81,7 +100,7 @@ li a{
       width:150px;
       border-radius: 12px;
     }
-    .btn{
+    .add-to-cart{
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -92,7 +111,38 @@ li a{
   font-size: 16px;
   border-radius: 12px;
 }
+.disp-cart{
+  background-color: orange; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  position:fixed;
+  bottom: 5%;
+  padding-left: 75%;
+}
+.clear-cart{
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  position:fixed;
+  bottom: 5%;
+  right:5%;
+}
+
   </style>
+}
+}
 </head>
 <body style="background-color: #f4f6ff">
 <ul id="navbar">
@@ -104,25 +154,24 @@ li a{
   <li class="nv"><a href="helpdeskform.html">Help desk</a></li>
   
 </ul>
-  <table style="width: 80%;height: 100%">
+  <table style="width: 60%;height: 100%">
     <tr>
       <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
-      <div class="image"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2013/01/idli-recipe-1-500x500.jpg" class="image"></div>
+      <div class="image"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2013/01/idli-recipe-1-500x500.jpg" class="image" data-name="Idly" data-price="20" data-id="0"></div>
       <div class="text">Idly</div>
       <div class="price">₹20</div>
-      <div><button class="btn">Add to Cart</button></div>
-    </td>
+      <div><button class="add-to-cart" href="#" data-name="Idly" data-price="20" >Add to cart</button></div></td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
-      <div class="image"><img src="https://www.archanaskitchen.com/images/archanaskitchen/Indian_Breakfast_Tiffins/South_Indian_Medu_Vada_Sambar_with_Medu_Vada_Maker-8.jpg"class="image"></div>
+      <div class="image"><img src="https://www.archanaskitchen.com/images/archanaskitchen/Indian_Breakfast_Tiffins/South_Indian_Medu_Vada_Sambar_with_Medu_Vada_Maker-8.jpg"class="image" data-name="Wada" data-price="20" data-id="1"></div>
       <div class="text">Wada</div>
       <div class="price">₹20</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Wada" data-price="20">Add to cart</button></div>
     </td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
-      <div class="image"><img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2018/03/Veg-Schezwan-Fried-Rice-Recipe-Step-By-Step-Instructions.jpg?fit=2019%2C1923&quality=65&strip=all&ssl=1" class="image"></div>
+      <div class="image"><img src="https://i0.wp.com/vegecravings.com/wp-content/uploads/2018/03/Veg-Schezwan-Fried-Rice-Recipe-Step-By-Step-Instructions.jpg?fit=2019%2C1923&quality=65&strip=all&ssl=1" class="image" data-name="Schezwan Fried Rice" data-price="30" data-id="2"></div>
       <div class="text">Schezwan Fried Rice</div>
       <div class="price">₹30</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Schezwan Fried Rice" data-price="30">Add to cart</button></div>
     </td>
     </tr>
     <tr >
@@ -130,19 +179,19 @@ li a{
       <div class="image"><img src="https://lh4.ggpht.com/-br4XlnfcwRk/VK5yMKDlSuI/AAAAAAAAj9s/6dR0qKpfgL4/Chapati_thumb%25255B2%25255D.jpg?imgmax=800" class="image"></div>
       <div class="text">Chapathi</div>
       <div class="price">₹30</div>
-      <div><button  class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Chapathi" data-price="30">Add to cart</button ></div>
     </td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
       <div class="image"><img src="https://holycowvegan.net/wp-content/uploads/2020/03/vegetable-fried-rice-5.jpg" class="image"></div>
       <div class="text">Fried Rice</div>
       <div class="price">₹40</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Fried Rice" data-price="30">Add to cart</button></div>
     </td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
       <div class="image"><img src="https://www.cookwithmanali.com/wp-content/uploads/2015/07/Restaurant-Style-Recipe-Paneer-Tikka-500x500.jpg" class="image"></div>
       <div class="text">Paneer Tikka</div>
       <div class="price">₹70</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Paneer Tikka" data-price="70">Add to cart</button></div>
     </td>
     </tr>
     <tr>
@@ -150,22 +199,103 @@ li a{
       <div class="image"><img src="https://dinnerthendessert.com/wp-content/uploads/2018/08/Spring-Rolls.jpg" class="image"></div>
       <div class="text">Spring roll</div>
       <div class="price">₹40</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Spring Roll" data-price="40">Add to cart</button></div>
     </td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
       <div class="image"><img src="https://www.loveandoliveoil.com/wp-content/uploads/2015/03/soy-sauce-noodlesH2.jpg" class="image"></div>
       <div class="text">Noodles</div>
       <div class="price">₹40</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button  class="add-to-cart" href="#" data-name="Noodles" data-price="40">Add to cart</button></div>
     </td>
     <td style="width: 30%;height: 30%;padding-top: 10%;padding-left: 10%">
       <div class="image"><img src="https://yummyrecipes.oneshot.in/wp-content/uploads/2016/06/Aloo-65-yummyrecipes.onehsot.in_-768x576.jpg" class="image"></div>
       <div class="text">Manchuria</div>
       <div class="price">₹30</div>
-      <div><button class="btn">Add to Cart</button></div>
+      <div><button class="add-to-cart" href="#" data-name="Manchuria" data-price="30">Add to cart</button></div>
     </td>
     </tr>
   </table>
+  <div class="clear"><button class="clear-cart" id="clear-cart">Clear Cart</button></div>
+  <div>
+    <div class="listhai">
+            <ul id="show-cart" style="width: 40%;top: 50%;right:1%;align-content: right">
+                <li>???????<br></li>
+            </ul></div>
+            <div class="count">You have <span id="count-cart">X</span> items in your cart</div>
+            <div class="total-count">Total Cart:₹<span id="total-cart"></span></div>
+        </div>
 
-</body>
+        <script>
+
+            $(".add-to-cart").click(function(event){
+                event.preventDefault();
+                var name = $(this).attr("data-name");
+                var price = Number($(this).attr("data-price"));
+
+                shoppingCart.addItemToCart(name, price, 1);
+                displayCart();
+            });
+
+            $("#clear-cart").click(function(event){
+                shoppingCart.clearCart();
+                displayCart();
+            });
+
+            function displayCart() {
+                var cartArray = shoppingCart.listCart();
+                console.log(cartArray);
+                var output = "";
+
+                for (var i in cartArray) {
+                    output += "<li>"
+                        +cartArray[i].name
+                        +" <input class='item-count' type='number' data-name='"
+                        +cartArray[i].name
+                        +"' value='"+cartArray[i].count+"' >"
+                        +" x "+cartArray[i].price
+                        +" = "+cartArray[i].total
+                        +" <button class='plus-item' style='background-color:snow;border-radius:12px' data-name='"
+                        +cartArray[i].name+"'>+</button>"
+                        +" <button class='subtract-item'style='background-color:snow;border-radius:12px' data-name='"
+                        +cartArray[i].name+"'>-</button>"
+                        +" <button class='delete-item' style='background-color:snow;border-radius:12px'data-name='"
+                        +cartArray[i].name+"'>X</button>"
+                        +"</li><br>";
+                }
+
+                $("#show-cart").html(output);
+                $("#count-cart").html( shoppingCart.countCart() );
+                $("#total-cart").html( shoppingCart.totalCart() );
+            }
+
+            $("#show-cart").on("click", ".delete-item", function(event){
+                var name = $(this).attr("data-name");
+                shoppingCart.removeItemFromCartAll(name);
+                displayCart();
+            });
+
+            $("#show-cart").on("click", ".subtract-item", function(event){
+                var name = $(this).attr("data-name");
+                shoppingCart.removeItemFromCart(name);
+                displayCart();
+            });
+
+            $("#show-cart").on("click", ".plus-item", function(event){
+                var name = $(this).attr("data-name");
+                shoppingCart.addItemToCart(name, 0, 1);
+                displayCart();
+            });
+
+            $("#show-cart").on("change", ".item-count", function(event){
+                var name = $(this).attr("data-name");
+                var count = Number($(this).val());
+                shoppingCart.setCountForItem(name, count);
+                displayCart();
+            });
+
+
+            displayCart();
+
+        </script>
+    </body>
 </html>
